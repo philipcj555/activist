@@ -40,14 +40,14 @@
             $t(i18nMap.components.empty_state.message_no_permission)
           }}</span>
           <PageCommunityFooter
-            :header="i18nMap.components.empty_state.cta_header_no_permission"
+            :header="$t(i18nMap.components.empty_state.cta_header_no_permission)"
             ><BtnRouteInternal
               class="w-full"
               :cta="false"
-              :label="i18nMap._global.return_home"
+              :label="$t(i18nMap._global.return_home)"
               linkTo="/home"
               fontSize="lg"
-              :ariaLabel="i18nMap._global.return_home_aria_label"
+              :ariaLabel="$t(i18nMap._global.return_home_aria_label)"
           /></PageCommunityFooter>
         </div>
         <div v-else class="flex flex-col space-y-6 py-6">
@@ -61,7 +61,7 @@
               v-if="pageType == 'organizations'"
               class="w-full"
               :cta="true"
-              :label="i18nMap.components.empty_state.create_organization"
+              :label="$t(i18nMap.components.empty_state.create_organization)"
               linkTo="/organizations/create"
               fontSize="lg"
               :ariaLabel="
@@ -72,7 +72,7 @@
               v-if="pageType == 'groups'"
               class="w-full"
               :cta="true"
-              :label="i18nMap._global.create_group"
+              :label="$t(i18nMap._global.create_group)"
               linkTo="/groups/create"
               fontSize="lg"
               :ariaLabel="
@@ -83,7 +83,7 @@
               v-if="pageType == 'events'"
               class="w-full"
               :cta="true"
-              :label="i18nMap.components.empty_state.create_event"
+              :label="$t(i18nMap.components.empty_state.create_event)"
               linkTo="/events/create"
               fontSize="lg"
               :ariaLabel="
@@ -94,7 +94,7 @@
               v-if="pageType == 'resources'"
               class="w-full"
               :cta="true"
-              :label="i18nMap._global.create_resource"
+              :label="$t(i18nMap._global.create_resource)"
               linkTo="/resources/create"
               fontSize="lg"
               :ariaLabel="
@@ -103,15 +103,15 @@
             />
           </div>
           <PageCommunityFooter
-            :header="i18nMap.components.empty_state.cta_header_no_permission"
+            :header="$t(i18nMap.components.empty_state.cta_header_no_permission)"
             :helpNeeded="true"
             ><BtnRouteInternal
               class="w-full"
               :cta="false"
-              :label="i18nMap._global.return_home"
+              :label="$t(i18nMap._global.return_home)"
               linkTo="/home"
               fontSize="lg"
-              :ariaLabel="i18nMap._global.return_home_aria_label"
+              :ariaLabel="$t(i18nMap._global.return_home_aria_label)"
           /></PageCommunityFooter>
         </div>
       </div>
