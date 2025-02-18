@@ -1,6 +1,7 @@
 <!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
 <template>
-  <div class="flex w-full flex-col items-center bg-layer-0 text-primary-text">
+<!-- Adhering to Vue/Nuxt style guide for structured templates -->
+  <div class="flex flex-col items-center w-full bg-layer-0 text-primary-text">
     <PageContent
       :imgUrl="BOOTSTRAP_CLOUD_MOON_URL"
       :imgAltText="i18nMap.components.empty_state.img_alt_text"
@@ -112,9 +113,11 @@
 </template>
 
 <script setup lang="ts">
-import { i18nMap } from "~/types/i18n-map";
+// Ensure compliance with Vue/Nuxt style guide and maintain TypeScript best practices.
+import { i18nMap } from '~/types/i18n-map'; // Adhering to ESLint style guide
 
-defineProps<{
+// Define props using TypeScript for strict type checking and maintainability.
+defineProps<{ 
   pageType:
     | "organizations"
     | "groups"
